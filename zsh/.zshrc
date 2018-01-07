@@ -116,5 +116,4 @@ export PATH=$GOPATH:GOPATH/bin:$PATH
 #                RESTORE KEYBINDS                 #
 ###################################################
 bindkey -e
-bindkey -v
 
