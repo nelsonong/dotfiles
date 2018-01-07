@@ -7,7 +7,6 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 unsetopt beep
-bindkey -v
 
 zstyle :compinstall filename '/home/nelson/.zshrc'
 
@@ -20,9 +19,6 @@ promptinit
 ###################################################
 #                   POWERLINE                     #
 ###################################################
-#export POWERLINE_DIR=/usr/lib/python3.6/site-packages/powerline
-#. $POWERLINE_DIR/bindings/zsh/powerline.zsh
-
 function powerline_precmd() {
     PS1="$(powerline-shell --shell zsh $?)"
 }
@@ -48,6 +44,8 @@ alias ls='ls --color=auto'
 alias la='ls -la --color=auto'
 alias v='nvim'
 alias sv='sudo nvim'
+alias l='leafpad'
+alias sl='sudo leafpad'
 alias ld='ldmc -l'
 alias rd='sudo ldmc -r'
 alias rb='sudo shutdown -r now'
@@ -118,4 +116,5 @@ export PATH=$GOPATH:GOPATH/bin:$PATH
 #                RESTORE KEYBINDS                 #
 ###################################################
 bindkey -e
+bindkey -v
 
