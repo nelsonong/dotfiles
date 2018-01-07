@@ -73,3 +73,5 @@ Jan 07 05:05 : client: [23] opened from 127.0.0.1:46740
 Jan 07 05:28 : client: [0] closed
 Jan 07 05:28 : client: [23] closed
 Jan 07 05:28 : client: [24] opened from 127.0.0.1:46966
+Jan 07 15:54 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 07 15:54 : client: [0] opened from 127.0.0.1:35046
