@@ -20,3 +20,53 @@ Jan 06 21:28 : client: [8] opened from 127.0.0.1:45042
 Jan 06 21:30 : client: [8] closed
 Jan 06 21:30 : client: [9] opened from 127.0.0.1:45184
 Jan 06 21:37 : client: [10] opened from 127.0.0.1:45284
+Jan 07 04:06 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 07 04:06 : client: [0] opened from 127.0.0.1:55684
+Jan 07 04:07 : client: [0] closed
+Jan 07 04:08 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 07 04:08 : client: [0] opened from 127.0.0.1:46310
+Jan 07 04:50 : client: [1] opened from 127.0.0.1:46688
+Jan 07 04:57 : client: [1] closed
+Jan 07 04:57 : client: [2] opened from 127.0.0.1:46698
+Jan 07 04:59 : client: [2] closed
+Jan 07 04:59 : client: [3] opened from 127.0.0.1:46700
+Jan 07 04:59 : client: [3] closed
+Jan 07 04:59 : client: [4] opened from 127.0.0.1:46702
+Jan 07 04:59 : client: [4] closed
+Jan 07 04:59 : client: [5] opened from 127.0.0.1:46704
+Jan 07 04:59 : client: [5] closed
+Jan 07 04:59 : client: [6] opened from 127.0.0.1:46706
+Jan 07 05:00 : client: [6] closed
+Jan 07 05:00 : client: [7] opened from 127.0.0.1:46708
+Jan 07 05:00 : client: [7] closed
+Jan 07 05:00 : client: [8] opened from 127.0.0.1:46710
+Jan 07 05:01 : client: [8] closed
+Jan 07 05:01 : client: [9] opened from 127.0.0.1:46712
+Jan 07 05:01 : client: [9] closed
+Jan 07 05:01 : client: [10] opened from 127.0.0.1:46714
+Jan 07 05:02 : client: [10] closed
+Jan 07 05:02 : client: [11] opened from 127.0.0.1:46716
+Jan 07 05:02 : client: [11] closed
+Jan 07 05:02 : client: [12] opened from 127.0.0.1:46718
+Jan 07 05:02 : client: [12] closed
+Jan 07 05:02 : client: [13] opened from 127.0.0.1:46720
+Jan 07 05:02 : client: [13] closed
+Jan 07 05:02 : client: [14] opened from 127.0.0.1:46722
+Jan 07 05:03 : client: [14] closed
+Jan 07 05:03 : client: [15] opened from 127.0.0.1:46724
+Jan 07 05:03 : client: [15] closed
+Jan 07 05:03 : client: [16] opened from 127.0.0.1:46726
+Jan 07 05:03 : client: [16] closed
+Jan 07 05:03 : client: [17] opened from 127.0.0.1:46728
+Jan 07 05:04 : client: [17] closed
+Jan 07 05:04 : client: [18] opened from 127.0.0.1:46730
+Jan 07 05:04 : client: [18] closed
+Jan 07 05:04 : client: [19] opened from 127.0.0.1:46732
+Jan 07 05:04 : client: [19] closed
+Jan 07 05:04 : client: [20] opened from 127.0.0.1:46734
+Jan 07 05:04 : client: [20] closed
+Jan 07 05:04 : client: [21] opened from 127.0.0.1:46736
+Jan 07 05:05 : client: [21] closed
+Jan 07 05:05 : client: [22] opened from 127.0.0.1:46738
+Jan 07 05:05 : client: [22] closed
+Jan 07 05:05 : client: [23] opened from 127.0.0.1:46740

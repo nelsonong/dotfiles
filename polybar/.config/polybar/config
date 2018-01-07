@@ -19,7 +19,7 @@ font-1 = WunconSiji:pixelsize=12:antialias=false;2
 
 modules-left = bspwm mpd
 modules-center = xwindow
-modules-right = battery volume memory eth date
+modules-right = wireless-network battery volume memory eth date
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;                           COLORS                           ;
@@ -110,6 +110,30 @@ format-prefix = "  "
 format-prefix-background = ${colors.bblk}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;                     WIRELESS NETWORK                       ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/wireless-network]
+type = internal/network
+
+interface = wlp3s0
+
+format-connected-prefix = "  "
+format-connected-prefix-background = ${colors.bblk}
+format-connected = <label-connected>
+format-connected-padding = 1
+
+format-disconnected-prefix = "  "
+format-disconnected-prefix-background = ${colors.bblk}
+format-disconnected = <label-disconnected>
+format-disconnected-padding = 1
+
+label-connected-background = ${colors.cyn}
+label-connected = " %essid%  "
+
+label-disconnected-background = ${colors.cyn}
+label-disconnected =  None
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;                          BATTERY                           ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/battery]
@@ -133,17 +157,17 @@ label-full = " %percentage%% "
 format-charging-prefix = "  "
 format-charging-prefix-background = ${colors.bblk}
 format-charging = <label-charging>
-format-charging-padding = 2
+format-charging-padding = 1
 
 format-discharging-prefix = "  "
 format-discharging-prefix-background = ${colors.bblk}
 format-discharging = <label-discharging>
-format-discharging-padding = 2
+format-discharging-padding = 1
 
 format-full-prefix = "  "
 format-full-prefix-background = ${colors.bblk}
 format-full = <label-full>
-format-full-padding = 2
+format-full-padding = 1
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;                           VOLUME                           ;
@@ -156,9 +180,11 @@ format-volume-prefix-background = ${colors.bblk}
 label-volume-background = ${colors.red}
 label-volume = " %percentage%% "
 format-volume = <label-volume>
+format-volume-padding = 1
 
 format-muted-prefix = "  "
 format-muted-prefix-background = ${colors.bblk}
+format-muted-padding = 1
 label-muted-background = ${colors.red}
 label-muted = " muted "
 
@@ -171,6 +197,7 @@ interval = 2
 
 format-prefix = "  "
 format-prefix-background = ${colors.bblk}
+format-padding = 1
 label-background = ${colors.ylw}
 label = " %gb_used% "
 
@@ -184,6 +211,7 @@ interval = 30
 
 format-connected-prefix = "  "
 format-connected-prefix-background = ${colors.bblk}
+format-connected-padding = 1
 label-connected-background = ${colors.grn}
 label-connected = " %local_ip% "
 
@@ -202,5 +230,6 @@ time-alt = %H:%M:%S
 
 format-prefix = "  "
 format-prefix-background = ${colors.bblk}
+format-padding = 1
 label-background = ${colors.blu}
 label = "%date% %time% "

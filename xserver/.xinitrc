@@ -18,8 +18,11 @@ xsetroot -cursor_name left_ptr
 ## Wallpaper
 xsetroot -mod 10 2 -bg "$(xrdb -query|awk '/^\*color0:/ {print $2}')" -fg "$(xrdb -query|awk '/^\*color8:/ {print $2}')"
 
+## Numlock
+numlockx &
+
 ## Mpd
-#mpd &
+mpd &
 
 ## Polybar
 #bar &
