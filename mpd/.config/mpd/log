@@ -1,0 +1,22 @@
+Jan 06 19:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 06 19:52 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 06 20:15 : client: [0] opened from 127.0.0.1:43944
+Jan 06 20:16 : client: [0] closed
+Jan 06 20:16 : client: [1] opened from 127.0.0.1:43946
+Jan 06 20:18 : client: [1] closed
+Jan 06 20:19 : client: [2] opened from 127.0.0.1:44098
+Jan 06 20:23 : client: [2] closed
+Jan 06 20:24 : client: [3] opened from 127.0.0.1:44124
+Jan 06 20:27 : client: [3] closed
+Jan 06 20:27 : client: [4] opened from 127.0.0.1:44196
+Jan 06 20:29 : client: [4] closed
+Jan 06 20:29 : client: [5] opened from 127.0.0.1:44216
+Jan 06 20:38 : client: [5] closed
+Jan 06 20:45 : client: [6] opened from 127.0.0.1:44460
+Jan 06 21:10 : client: [6] closed
+Jan 06 21:10 : client: [7] opened from 127.0.0.1:44796
+Jan 06 21:28 : client: [7] closed
+Jan 06 21:28 : client: [8] opened from 127.0.0.1:45042
+Jan 06 21:30 : client: [8] closed
+Jan 06 21:30 : client: [9] opened from 127.0.0.1:45184
+Jan 06 21:37 : client: [10] opened from 127.0.0.1:45284

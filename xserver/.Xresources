@@ -1,0 +1,73 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                                 XRES CONFIG                                 !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+urxvt*cursorBlink:      false
+urxvt*scrollBar:        false
+urxvt*depth:            32
+urxvt*internalBorder:   8
+urxvt*dynamicColors:    on
+urxvt*perl-ext-common:  default,matcher,selection-to-clipboard
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                                    FONTS                                    !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+urxvt*font:     xft:Inconsolata for Powerline:size=11:antialias=true
+
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.autohint:   false
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+Xft.lcdfilter:  lcddefault
+Xft.rgba:       rgb
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                                   COLORS                                    !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#include        </home/nelson/.urxvt/gruvbox>
+
+*background:    bg
+*foreground:    fg
+*.cursorColor:  fg
+
+*color0:        blk
+*color8:        bblk
+
+*color1:        red
+*color9:        bred
+
+*color2:        grn
+*color10:       bgrn
+
+*color3:        ylw
+*color11:     	bylw
+
+*color4:      	blu
+*color12:     	bblu
+
+*color5:      	mag
+*color13:     	bmag
+
+*color6:      	cyn
+*color14:     	bcyn
+
+*color7:      	wht
+*color15:     	bwht
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                                 ROFI CONFIG                                 !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+rofi.color-window:   bg, bg, bg
+rofi.color-normal:   bg, fg, bg, red, fg
+rofi.color-active:   bg, fg, bg, bg, bg
+rofi.color-urgent:   bg, red, bg, red, fg
+
+rofi.font:           tewi 8
+rofi.lines:          10
+rofi.width:          30
+rofi.location:       2
+rofi.yoffset:        33
+rofi.padding:        10
+rofi.terminal:       urxvtc
+rofi.hide-scrollbar: true
+rofi.modi:           run,drun

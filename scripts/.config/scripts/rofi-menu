@@ -1,0 +1,84 @@
+#!/bin/bash
+###################################################
+#                     ROFI MENU                   #
+###################################################
+declare -A LABELS
+declare -A COMMANDS
+
+###################################################
+#                       BANGS                     #
+###################################################
+COMMANDS["->Bookmarks"]='rofi-bookmarks'
+LABELS["->Bookmarks"]=""
+
+COMMANDS["gg"]="$BROWSER https://www.google.com/search?q=\ \"\${input}\""
+LABELS["->GG"]=""
+
+COMMANDS["yt"]="$BROWSER https://www.youtube.com/results?search_query=\ \"\${input}\""
+LABELS["->Yt"]=""
+
+COMMANDS["g1"]="$BROWSER http://g1.globo.com/busca/?q=\ \"\${input}\""
+LABELS["->G1"]=""
+
+COMMANDS["reddit"]="$BROWSER https://www.reddit.com/r/\ \"\${input}\""
+LABELS["->Reddit"]=""
+
+COMMANDS["ml"]="$BROWSER http://lista.mercadolivre.com.br/\ \"\${input}\""
+LABELS["->ML"]=""
+
+COMMANDS["tpb"]="$BROWSER http://thepiratebay.org/search/\ \"\${input}\""
+LABELS["->TPB"]=""
+
+COMMANDS["imdb"]="$BROWSER http://www.imdb.com/find?q=\ \"\${input}\""
+LABELS["->IMDB"]=""
+
+COMMANDS["wiki"]="$BROWSER https://pt.wikipedia.org/wiki/\ \"\${input}\""
+LABELS["->WIKI"]=""
+
+COMMANDS["->Pass"]='rofi-pass'
+LABELS["->Pass"]=""
+
+COMMANDS["->Screenshot"]='screenshot'
+LABELS["->Screenshot"]=""
+
+COMMANDS["->Screenshot-Window"]='screenshot-selected'
+LABELS["->Screenshot-Window"]=""
+
+###################################################
+#                   MENU CONFIG                   #
+###################################################
+function print_menu()
+{
+    for key in ${!LABELS[@]}
+    do
+  echo "$key    ${LABELS}"
+    done
+}
+
+function start()
+{
+    #print_menu | rofi -dmenu -p "?=>" 
+    print_menu | sort | rofi -dmenu -i -p "Executar:"
+}
+
+value="$(start)"
+
+choice=${value%%\ *}
+input=${value:$((${#choice}+1))}
+
+
+## Cancelled
+if test -z ${choice}
+then
+    exit
+fi
+
+## Check if Choice Exists
+if test ${COMMANDS[$choice]+isset}
+then
+    # Execute the Choice
+    eval echo "Executando: ${COMMANDS[$choice]}"
+    eval ${COMMANDS[$choice]}
+else
+ eval  $choice | rofi
+fi
