@@ -25,8 +25,8 @@ numlockx &
 mpd &
 
 ## Polybar
-#bar &
-polybar main &
+bar &
+#polybar main &
 
 ## Urxvt Daemon
 urxvtd -q -f -o &
