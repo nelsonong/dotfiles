@@ -114,3 +114,8 @@ export MPD_HOST=127.0.0.1
 export GOPATH=$HOME/gopath
 export PATH=$GOPATH:GOPATH/bin:$PATH
 
+###################################################
+#                RESTORE KEYBINDS                 #
+###################################################
+bindkey -e
+
