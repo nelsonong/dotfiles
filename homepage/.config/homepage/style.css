@@ -5,7 +5,7 @@ body {
 
 div[class^="books"], div [class*="books"] {
 	font-family: "tewi" !important;
-	font-size: 9px !important;
+	font-size: 11px !important;
 }
 
 a, a:link {
@@ -43,7 +43,7 @@ ul li:last-child:after {
 }
 
 div.books {
-	margin-left: 30% !important;
+	margin-left: 45% !important;
 	text-align: left !important;
 	padding-left: 0px;
 	display: table;
@@ -54,7 +54,7 @@ div.books {
 }
 
 div.books2 {
-	margin-right: 70% !important;
+	margin-right: 55% !important;
 	text-align: right !important;
 	color: #b8b8b8
 	float: right;

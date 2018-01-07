@@ -11,7 +11,7 @@ urxvt*perl-ext-common:  default,matcher,selection-to-clipboard
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !                                    FONTS                                    !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-urxvt*font:     xft:Inconsolata for Powerline:size=11:antialias=true
+urxvt*font:     xft:xos4 Terminus:size=11:antialias=true
 
 Xft.dpi:        96
 Xft.antialias:  true
