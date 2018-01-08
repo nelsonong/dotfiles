@@ -1,11 +1,13 @@
 body {
 	background-color: #1D2021;
 	color: #CC241D !important;
+	font-family: "monospace" !important;
+	font-size: 60% !important;
 }
 
-div[class^="books"], div [class*="books"] {
-	font-family: "tewi" !important;
-	font-size: 11px !important;
+.container {
+	width: 60%;
+	margin: 0 auto;
 }
 
 a, a:link {
@@ -42,40 +44,34 @@ ul li:last-child:after {
 	content: "" !important;
 }
 
-div.books {
-	margin-left: 45% !important;
+.right {
+	margin-left: 40% !important;
 	text-align: left !important;
 	padding-left: 0px;
 	display: table;
 
 	position: absolute;
 	left: 0px;
-	top: 30%;
+	top: 35%;
 }
 
-div.books2 {
-	margin-right: 55% !important;
+.left {
+	margin-right: 60% !important;
 	text-align: right !important;
-	color: #b8b8b8
+	color: #CC241D;
 	float: right;
 	display: table;
 
 	position: absolute;
 	right: 0px;
-	top: 30%;
+	top: 35%;
 }
 
-ul li#books2 {
+ul li#left {
 	float: right !important;
 }
 
-ul li#books2:after {
+ul li#left:after {
 	content: "" !important;
 }
 
-.mascot {
-	width: 30%;
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
-}
