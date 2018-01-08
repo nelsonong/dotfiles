@@ -11,7 +11,7 @@ urxvt*perl-ext-common:  default,matcher,selection-to-clipboard
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !                                    FONTS                                    !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-urxvt*font:     xft:xos4 Terminus:size=11:antialias=true
+urxvt*font:     xft:xos4 Terminus:size=9:antialias=true
 
 Xft.dpi:        96
 Xft.antialias:  true
@@ -62,7 +62,7 @@ rofi.color-normal:   bg, fg, bg, red, fg
 rofi.color-active:   bg, fg, bg, bg, bg
 rofi.color-urgent:   bg, red, bg, red, fg
 
-rofi.font:           tewi 8
+rofi.font:           xos4 Terminus 8
 rofi.lines:          10
 rofi.width:          30
 rofi.location:       2
