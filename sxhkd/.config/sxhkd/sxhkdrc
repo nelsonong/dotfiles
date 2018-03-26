@@ -96,7 +96,7 @@ super + {h,j,k,l}
 ###################################################
 ## Terminal
 super + Return
-    tdrop -a -w -4 -y 33 -s dropdown urxvtc
+    tdrop -a -w -4 -y 33 -s dropdown urxvt
 
 ## Launcher
 super + space
