@@ -104,7 +104,7 @@ alias gdrive="$GOPATH/bin/drive"
 #                     EXPORT                      #
 ###################################################
 export TERM='xterm-256color'
-export BROWSER='google-chrome'
+export BROWSER='chromium'
 export VISUAL='nvim'
 export EDITOR='nvim'
 export MPD_HOST=127.0.0.1
