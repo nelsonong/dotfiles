@@ -37,4 +37,5 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 syntax on
+cmap w!! w !sudo tee > /dev/null %
 filetype plugin indent on
