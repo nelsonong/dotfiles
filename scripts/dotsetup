@@ -1,12 +1,38 @@
-#!/bin/sh
-## Install packages.
-sudo pacman -Syu
-sudo pacman -Syu xorg-minimal xorg-fonts xorg-fonts xset xsetroot terminus-font dejavu-fonts rxvt-unicode \
-                 bspwm sxhkd neovim leafpad ranger mpv mpd rofi polybar stow git
+#!/bin/bash
 
-## Symlink dotfiles.
-git clone --depth 1 https://github.com/nelsonong/dotfiles
-cd $HOME/dotfiles
-stow bookmarks bspwm fonts homepage mpd mpv ncmpcpp neovim polybar sxhkd tmux xserver zsh
+# Install pacman packages.
+sudo pacman -Syu git xorg-server xorg-xinit	xorg-xsetroot xorg-xrandr stow go networkmanager network-manager-applet stalonetray python pip-install exfat-utils zip unzip mesa xf86-video-nouveau xf86-input-synaptics openvpn rxvt-unicode rofi chromium pepper-flash tmux terminus-font leafpad wireless_tool zsh
+
+# Create dotfile symlinks.
+cd ~
+git clone https://github.com/nelsonong/dotfiles --depth=1
+cd dotfiles
+stow bookmarks bspwm mpd mpv ncmpcpp neovim polybar sxhkd tmux xserver zsh
+sudo stow scripts -t /usr/bin
 cd ..
 
+# Install powerline.
+sudo pip install powerline-shell
+
+# Install powerline fonts.
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
+# Install aurman.
+git clone http://aur.archlinux.org/aurman.git
+cd aurman
+makepkg -si
+cd ..
+rm -rf aurman
+
+# Install aur packages.
+aurman -S bspwm-git sxhkd-git polybar-git ranger-git simplenote-electron-bin bdf-tewi-git siji-git ttf-ms-fonts tdrop-git neovim-git baka-mplayer-git slock-git
+
+# Currently non-building/non-maintained aur packages (install community version).
+sudo pacman-Syu code mpd ncmpcpp
+
+# Install Google Drive client.
+go get -u github.com/odeke-em/drive/cmd/drive
