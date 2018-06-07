@@ -53,17 +53,19 @@ alias rd='sudo ldmc -r'
 alias rb='sudo shutdown -r now'
 alias p='sudo shutdown -h now'
 
-alias zz="systemctl suspend"
-alias rw="nmcli radio wifi off && sleep 5 && nmcli radio wifi on"
+alias zz='systemctl suspend'
+alias rw='nmcli radio wifi off && sleep 5 && nmcli radio wifi on'
+
+alias miru='sudo reflector --country Canada --fastest 12 --latest 12 --verbose --save /etc/pacman.d/mirrorlist'
 
 aurpm='aurman'
 alias aurqm='$aurpm -Qm'
 alias aurqn='$aurpm -Qn'
-alias aurs='$aurpm -S'
-alias aurr='$aurpm -R'
-alias auru='$aurpm -Su'
-alias pacs='sudo pacman -Sy'
-alias pacr='sudo pacman -R'
+alias aurs='$aurpm -Syu'
+alias aurr='$aurpm -Rs'
+alias auru='$aurpm -Syu'
+alias pacs='sudo pacman -Syu'
+alias pacr='sudo pacman -Rs'
 
 alias gs='git status'
 alias ga='git add'
@@ -98,7 +100,7 @@ alias vdotsetup='$EDITOR $HOME/dotfiles/scripts/dotsetup'
 alias ldotsetup='leafpad $HOME/dotfiles/scripts/dotsetup'
 
 alias sa='stow bspwm mpd mpv ncmcpp neovim polybar powerline sxhkd tmux xserver zsh'
-alias ss='sudo stow scripts -t /usr/bin'
+alias ss='sudo stow scripts -t /usr/local/bin'
 
 alias m='ncmpcpp'
 alias play='mpc toggle'
@@ -106,8 +108,8 @@ alias pause='mpc toggle'
 alias prev='mpc prev'
 alias next='mpc next'
 
-alias mntusb='sudo mount /dev/sdb1 /mnt/usbstick'
-alias umntusb='sudo umount /mnt/usbstick'
+alias mntdrive='sudo mount /dev/sdb1 /mnt/drive'
+alias umntdrive='sudo umount /mnt/drive'
 
 alias ovpn='sudo openvpn /etc/openvpn/client/client.conf'
 
@@ -117,7 +119,7 @@ alias gdrive="$GOPATH/bin/drive"
 #                     EXPORT                      #
 ###################################################
 export TERM='xterm-256color'
-export BROWSER='chromium'
+export BROWSER='google-chrome'
 export VISUAL='nvim'
 export EDITOR='nvim'
 export MPD_HOST=127.0.0.1
