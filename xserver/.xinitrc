@@ -34,5 +34,8 @@ urxvtd -q -f -o &
 ## Sxhkd
 sxhkd &
 
+## Redshift
+redshift &
+
 ## Wm
 exec bspwm
