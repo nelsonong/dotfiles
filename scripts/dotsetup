@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Install pacman packages.
-sudo pacman -Syu git xorg-server xorg-xinit	xorg-xsetroot xorg-xrandr stow go networkmanager network-manager-applet stalonetray python pip-install exfat-utils zip unzip mesa xf86-video-nouveau xf86-input-synaptics openvpn rxvt-unicode rofi chromium pepper-flash tmux terminus-font leafpad wireless_tool zsh
+sudo pacman -Syu alsa-utils exfat-utils git go leafpad libinput mesa network-manager-applet networkmanager openvpn pip-install python reflector rxvt-unicode rofi stalonetray stow tmux terminus-font unzip wireless_tools xf86-video-nouveau xorg-server xorg-xinit xorg-xsetroot xorg-xrandr zip zsh
 
 # Create dotfile symlinks.
 cd ~
 git clone https://github.com/nelsonong/dotfiles --depth=1
 cd dotfiles
-stow bookmarks bspwm mpd mpv ncmpcpp neovim polybar sxhkd tmux xserver zsh
-sudo stow scripts -t /usr/bin
+stow bspwm mpd mpv ncmpcpp neovim polybar sxhkd tmux xserver zsh
+sudo stow scripts -t /usr/local/bin
 cd ..
 
 # Install powerline.
@@ -22,17 +22,14 @@ cd ..
 rm -rf fonts
 
 # Install aurman.
-git clone http://aur.archlinux.org/aurman.git
-cd aurman
+git clone http://aur.archlinux.org/aurman-git.git
+cd aurman-git
 makepkg -si
 cd ..
-rm -rf aurman
+rm -rf aurman-git
 
 # Install aur packages.
-aurman -S bspwm-git sxhkd-git polybar-git ranger-git simplenote-electron-bin bdf-tewi-git siji-git ttf-ms-fonts tdrop-git neovim-git baka-mplayer-git slock-git
-
-# Currently non-building/non-maintained aur packages (install community version).
-sudo pacman-Syu code mpd ncmpcpp
+aurman -Syu bdf-tewi-git bspwm-git discord google-chrome mpd-git neovim-git ncmpcpp-git polybar-git qbittorrent-git ranger-git redshift-git siji-git spotify simplenote-electron-bin slock-git sxhkd-git tdrop-git ttf-ms-fonts
 
 # Install Google Drive client.
 go get -u github.com/odeke-em/drive/cmd/drive
